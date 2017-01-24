@@ -21,5 +21,5 @@ def get_tweets(name):
 	tweets = api.user_timeline(screen_name=name)
 	for i in tweets:
 		tweets_list.append("{} {}".format(i.created_at, i.text))
-		return tweets_list
+	return tweets_list
 
