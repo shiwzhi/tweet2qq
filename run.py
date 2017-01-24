@@ -14,12 +14,16 @@ tweets = get_tweets(name)
 translated = []
 
 for i in tweets:
+	sleep(1)
 	translated.append("{} {}".format(i, translate(i, 'en', 'zh')))
 
-final_text = ""
+final_text = name+"\n"
 
 for i in translated[:4]:
 	final_text += i+"\n"
+
+print(final_text)
+print(len(final_text))
 
 qq = qqapi.Sender("http://swz1994.com:5000")
 
