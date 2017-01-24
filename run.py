@@ -14,7 +14,7 @@ tweet_log = current_dir+"/{}.log".format(name)
 def get_latest():
 	tweets = get_tweets(name)
 	translated = []
-	for i in tweets[:4]:
+	for i in tweets[:3]:
 		translated.append(translate(i, 'en', 'zh'))
 
 	# final_text = name+"\n"
