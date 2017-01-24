@@ -23,4 +23,4 @@ for i in translated[:4]:
 
 qq = qqapi.Sender("http://swz1994.com:5000")
 
-qq.send_message(614291728, news, "group")
+qq.send_message(614291728, final_text, "group")
