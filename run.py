@@ -2,6 +2,7 @@ import qqapi
 from translate import translate
 from get_tweets import get_tweets
 import os
+from time import sleep
 
 name = "realDonaldTrump"
 
