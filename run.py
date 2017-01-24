@@ -14,7 +14,7 @@ tweets = get_tweets(name)
 translated = []
 
 for i in tweets:
-	translated.append("{} {}".format(i, translate(i)))
+	translated.append("{} {}".format(i, translate(i, 'en', 'zh')))
 
 final_text = ""
 
