@@ -12,10 +12,10 @@ tweet_log = current_dir+"/{}.log".format(name)
 
 tweets = get_tweets(name)
 
-# translated = []
+translated = []
 
-# for i in tweets:
-# 	translated.append("{} {}".format(i, translate(i, 'en', 'zh')))
+for i in tweets[:4]:
+	translated.append(translate(i, 'en', 'zh'))
 
 # final_text = name+"\n"
 
@@ -24,7 +24,7 @@ tweets = get_tweets(name)
 
 final_text = "@"+name+"\n"
 
-for i in tweets[:4]:
+for i in translated[:4]:
 	final_text += i+'\n'
 
 print(final_text)
