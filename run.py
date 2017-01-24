@@ -4,13 +4,14 @@ from get_tweets import get_tweets
 import os
 from time import sleep
 
+
+name = "realDonaldTrump"
 current_dir = os.path.dirname(os.path.abspath(__file__))
 tweet_log = current_dir+"/{}.log".format(name)
 
 
 
 def get_latest():
-	name = "realDonaldTrump"
 	tweets = get_tweets(name)
 	translated = []
 	for i in tweets[:4]:
