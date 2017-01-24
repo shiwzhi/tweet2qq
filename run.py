@@ -1,6 +1,7 @@
 import qqapi
 from translate import translate
 from get_tweets import get_tweets
+import os
 
 name = "realDonaldTrump"
 
